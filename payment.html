@@ -1,0 +1,46 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP - Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💳 Secure Payment</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main class="payment-container">
+        <h2>Complete Your Payment</h2>
+        <form>
+            <label for="card-name">Cardholder Name</label>
+            <input type="text" id="card-name" name="card-name" required>
+
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required pattern="\d{16}" placeholder="1234 5678 9012 3456">
+
+            <label for="expiry">Expiry Date</label>
+            <input type="month" id="expiry" name="expiry" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" required pattern="\d{3}" placeholder="123">
+
+            <label for="billing-address">Billing Address</label>
+            <textarea id="billing-address" name="billing-address" required></textarea>
+
+            <!-- Instead of a submit button, use an anchor tag -->
+            <a href="confirmation.html" class="pay-button">Pay Now 💳</a>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HP Beauty Store | All Rights Reserved 💖</p>
+    </footer>
+</body>
+</html>

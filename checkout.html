@@ -1,0 +1,40 @@
+<!-- Checkout Page -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP - Checkout</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">💳 Checkout</h1>
+        <nav style="text-align: center;">
+            <a href="cart.html">Back to Cart</a>
+        </nav>
+        <hr>
+    </header>
+    <main style="text-align: center;">
+        <h2>Billing Details 📝</h2>
+        <form action="payment.html" method="GET">
+            <label for="name">👤 Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="address">🏠 Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+            
+            <label for="payment">💰 Payment Method:</label><br>
+            <select id="payment" name="payment">
+                <option value="card">Credit/Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select><br><br>
+            
+            <button type="submit">✅ Proceed to Payment</button>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p style="text-align: center;">&copy; 2025 HP Beauty Store | All Rights Reserved 💖</p>
+    </footer>
+</body>
+</html>
